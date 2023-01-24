@@ -1,0 +1,38 @@
+.MainAbout {
+  margin: 6rem 0rem 0rem 0rem;
+}
+h1.aboutheading {
+  font-style: italic;
+  font-family: emoji;
+  border: 6px solid;
+  padding: 1rem;
+  border-block-style: initial;
+  text-align: center;
+}
+.abouttext {
+  width: 54rem;
+  margin: 3rem auto;
+  -webkit-text-stroke-width: thin;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-family: auto;
+}
+@media (max-width: 800px) {
+  .abouttext {
+    width: 24rem;
+    margin: 2rem auto;
+    -webkit-text-stroke-width: thin;
+    font-size: 1.3rem;
+    /* border: 2px solid black; */
+    font-style: italic;
+    font-family: auto;
+  }
+  h1.aboutheading {
+    font-style: italic;
+    font-family: emoji;
+    border: 3px solid;
+    padding: 1rem;
+    border-block-style: initial;
+    text-align: center;
+  }
+}
