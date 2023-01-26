@@ -8,6 +8,7 @@ h1.aboutheading {
   padding: 1rem;
   border-block-style: initial;
   text-align: center;
+  color: lime;
 }
 .abouttext {
   width: 54rem;
@@ -16,21 +17,42 @@ h1.aboutheading {
   font-size: 1.3rem;
   font-style: italic;
   font-family: auto;
+  color: white;
 }
 @media (max-width: 800px) {
   .abouttext {
-    width: 24rem;
+    width: 23rem;
     margin: 2rem auto;
     -webkit-text-stroke-width: thin;
     font-size: 1.3rem;
-    /* border: 2px solid black; */
     font-style: italic;
     font-family: auto;
+    text-align: left;
   }
   h1.aboutheading {
     font-style: italic;
     font-family: emoji;
     border: 3px solid;
+    padding: 1rem;
+    border-block-style: initial;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+
+  .abouttext {
+    width: 18rem;
+    margin: 2rem auto;
+    -webkit-text-stroke-width: thin;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-family: auto;
+  }
+
+  h1.aboutheading {
+    font-style: italic;
+    font-family: emoji;
+    border: 6px solid;
     padding: 1rem;
     border-block-style: initial;
     text-align: center;

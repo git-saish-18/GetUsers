@@ -3,6 +3,7 @@
 }
 nav {
   background-color: black;
+  width: 100%;
 }
 ul {
   display: flex;
@@ -12,4 +13,40 @@ li {
   margin: 1rem 4rem;
   font-size: large;
   list-style: none;
+}
+li#logo {
+  text-decoration: overline;
+}
+@media(max-width:400px)
+{
+  nav {
+    background-color: black;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    display: flex;
+    margin: 1rem 4rem;
+  }
+  a#about {
+    position: relative;
+    left: 4rem;
+    bottom: 3.29rem;
+}
+span#searchsecton {
+  float: right;
+  margin: -4rem 2px 0rem 0rem;
+}
+nav {
+  background-color: black;
+  width: 100%;
+  height: 6rem;
+}
+li#logo {
+  display: flex;
+  margin: 1rem 0rem 0rem 0rem;
+}
 }

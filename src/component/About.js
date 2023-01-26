@@ -3,9 +3,9 @@ import "../css/About.css";
 export default function About() {
   return (
     <div>
-      <div class="MainAbout">
-        <h1 class="aboutheading">About - Get Users Project</h1>
-        <div class="abouttext">
+      <div className="MainAbout">
+        <h1 className="aboutheading">About - Get Users Project</h1>
+        <div className="abouttext">
           In this project we develop Simple Fetch User details using in React Js with HTML ,
           CSS and JavaScript. React.js is front-end framework of JavaScript used to program to Fetch Users details . It’s a very popular Framework among web
           developers. This poject shows how React Js as a front-end framework can be used to make a

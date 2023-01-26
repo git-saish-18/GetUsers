@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Cards.css";
 export default function User() {
   let str = "";
@@ -17,12 +17,12 @@ export default function User() {
         .then((info) => {
           if (action == 200) {
             str = `
-            <div id="cards" class="card" style="width: 18rem;">
+            <div id="cards" className="card" style="width: 18rem;">
             <div id="singlecard">
-            <img src=${info.data.avatar} class="card-img-top" alt="...">
-            <div class="card-title">
-            <h5 class="names">${info.data.first_name}</h5>
-            <h5 class="names">${info.data.last_name}</h5>
+            <img src=${info.data.avatar} id="cardimg" alt="...">
+            <div id="card-title">
+            <h5 className="names">${info.data.first_name}</h5>
+            <h5 className="names">${info.data.last_name}</h5>
             </div>
             <div id="emailid">
             Email Id :- <a href="${info.data.email}"> ${info.data.email}</a>
@@ -51,12 +51,12 @@ export default function User() {
       .then((info) => {
         info.data.forEach((user) => {
           str += `
-          <div id="cards" class="card" style="width: 18rem;">
+          <div id="cards" className="card" style="width: 18rem;">
           <div id="singlecard">
-          <img src=${user.avatar} class="card-img-top" alt="...">
-          <div class="card-title">
-          <h5 class="names">${user.first_name}</h5>
-          <h5 class="names">${user.last_name}</h5>
+          <img src=${user.avatar} id="cardimg" alt="...">
+          <div id="card-title">
+          <h5 className="names">${user.first_name}</h5>
+          <h5 className="names">${user.last_name}</h5>
           </div>
           <div id="emailid">
           Email Id :- <a href="${user.email}"> ${user.email}</a>
@@ -76,7 +76,7 @@ export default function User() {
             type="text"
             name=""
             id="searchId"
-            placeholder="Enter the Id upto 1-12... "
+            placeholder="Enter Id upto 12..."
           />
         </span>
         <span>
