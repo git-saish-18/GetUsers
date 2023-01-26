@@ -1,7 +1,7 @@
 {
   "name": "getuser.app",
   "version": "0.1.0",
-  "homepage": "https://git-saish-18.github.io/",
+  "homepage": "https://github.com/git-saish-18/GetUsers-React-App.git",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
